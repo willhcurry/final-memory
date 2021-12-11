@@ -4,25 +4,25 @@ import SingleCard from './components/SingleCard';
 import './App.css';
 
 const cardImages = [
-  { "src": "/img/Bard.png" },
-  { "src": "/img/BlackMage.png" },
-  { "src": "/img/DarkKnight.png" },
-  { "src": "/img/Dragoon.png" },
-  { "src": "/img/GunBreaker.png" },
-  { "src": "/img/Monk.png" },
-  { "src": "/img/Ninja.png" },
-  { "src": "/img/Paladin.png" },
-  { "src": "/img/Samurai.png" },
-  { "src": "/img/Summoner.png" },
-  { "src": "/img/Warrior.png" },
-  { "src": "/img/WhiteMage.png" }
-]
+  { "src": "/img/Bard.png", matched: false },
+  { "src": "/img/BlackMage.png", matched: false },
+  { "src": "/img/DarkKnight.png", matched: false },
+  { "src": "/img/Dragoon.png", matched: false },
+  { "src": "/img/GunBreaker.png", matched: false },
+  { "src": "/img/Monk.png", matched: false },
+  { "src": "/img/Ninja.png", matched: false },
+  { "src": "/img/Paladin.png", matched: false },
+  { "src": "/img/Samurai.png", matched: false },
+  { "src": "/img/Summoner.png", matched: false },
+  { "src": "/img/Warrior.png", matched: false },
+  { "src": "/img/WhiteMage.png", matched: false }
+];
 
 function App() {
   //state of cards and turns
   const [cards, setCards] = useState([]);
   const [turns, setTurns] = useState(0);
-  //set state of choices
+  //state of choices
   const [choiceOne, setChoiceOne] = useState(null)
   const [choiceTwo, setChoiceTwo] = useState(null)
 
@@ -35,7 +35,7 @@ function App() {
       //shuffle the new array of cards
       .sort(() => Math.random() - 0.5)
       //assign an id for each shuffled card
-      .map((card) => ({ ...card, id: Math.random }))
+      .map((card) => ({ ...card, id: Math.random() }))
 
     //initialize shuffled cards and turns
     setCards(shuffledCards);
@@ -45,20 +45,35 @@ function App() {
   //handle a choice
   const handleChoice = (card) => {
     choiceOne ? setChoiceTwo(card) : setChoiceOne(card);
-  }
+  };
 
-  //compare 2 selected cards
+  /*
+    Compare card selections
+  */
   useEffect(() => {
     if (choiceOne && choiceTwo) {
       if (choiceOne.src === choiceTwo.src) {
-        console.log('those cards match');
+        //if both choices match then update the state using the previous state
+        setCards(prevCards => {
+          //create a new array based of the previous array
+          return prevCards.map(card => {
+            //compare the first card choice with the second card choice
+            if (card.src === choiceOne.src) {
+              //if they match we set the match key to value true on both cards
+              return { ...card, matched: true }
+            } else {
+              return card;
+            };
+          });
+        });
         resetTurn();
       } else {
-        console.log('those cards do not match');
         resetTurn();
-      }
-    }
-  }, [choiceOne, choiceTwo])
+      };
+    };
+  }, [choiceOne, choiceTwo]);
+
+  console.log(cards);
 
 
   //reset choices and increase turn
@@ -66,7 +81,7 @@ function App() {
     setChoiceOne(null)
     setChoiceTwo(null)
     setTurns(prevTurns => prevTurns + 1)
-  }
+  };
 
   return (
     <div className="App">
@@ -81,8 +96,8 @@ function App() {
             handleChoice={handleChoice} />
         ))}
       </div>
-    </div >
+    </div>
   );
-}
+};
 
 export default App;
