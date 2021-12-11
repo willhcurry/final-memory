@@ -1,5 +1,4 @@
 .App {
-  max-width: 850px;
   margin: 30px auto;
 }
 
@@ -17,4 +16,13 @@ button {
 button:hover {
   background: gray;
   color: white;
+}
+
+.card-grid {
+  margin: 2.5em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 1.25em;
+
+  justify-items: center;
 }
