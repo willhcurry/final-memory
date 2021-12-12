@@ -59,7 +59,7 @@ function App() {
           return prevCards.map(card => {
             //compare the first card choice with the second card choice
             if (card.src === choiceOne.src) {
-              //if they match we set the match key to value true on both cards
+              //if they match set the match key to value true on both cards
               return { ...card, matched: true }
             } else {
               return card;
@@ -94,7 +94,8 @@ function App() {
             key={card.id}
             card={card}
             handleChoice={handleChoice}
-            flipped={card === choiceOne || card === choiceTwo || card.matched} />
+            flipped={card === choiceOne || card === choiceTwo || card.matched}
+            invisible={card === card.matched} />
         ))}
       </div>
     </div>
