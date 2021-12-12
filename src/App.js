@@ -23,8 +23,10 @@ function App() {
   const [cards, setCards] = useState([]);
   const [turns, setTurns] = useState(0);
   //state of choices
-  const [choiceOne, setChoiceOne] = useState(null)
-  const [choiceTwo, setChoiceTwo] = useState(null)
+  const [choiceOne, setChoiceOne] = useState(null);
+  const [choiceTwo, setChoiceTwo] = useState(null);
+  //set state to disable unselected cards
+  const [disabled, setDisabled] = useState(false);
 
   /*
     Shuffle cards
@@ -52,6 +54,8 @@ function App() {
   */
   useEffect(() => {
     if (choiceOne && choiceTwo) {
+      //after both card choices are made, disable other card choices until the turn is reset
+      setDisabled(true);
       if (choiceOne.src === choiceTwo.src) {
         //if both choices match then update the state using the previous state
         setCards(prevCards => {
@@ -78,9 +82,10 @@ function App() {
 
   //reset choices and increase turn
   const resetTurn = () => {
-    setChoiceOne(null)
-    setChoiceTwo(null)
-    setTurns(prevTurns => prevTurns + 1)
+    setChoiceOne(null);
+    setChoiceTwo(null);
+    setTurns(prevTurns => prevTurns + 1);
+    setDisabled(false);
   };
 
   return (
@@ -95,7 +100,7 @@ function App() {
             card={card}
             handleChoice={handleChoice}
             flipped={card === choiceOne || card === choiceTwo || card.matched}
-            invisible={card === card.matched} />
+            disabled={disabled} />
         ))}
       </div>
     </div>
