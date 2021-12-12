@@ -29,3 +29,10 @@
     transform: rotateY(90deg);
     transition-delay: 0s;
 }
+
+
+.disappear {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 2s, opacity 5s linear;
+  }
