@@ -37,9 +37,11 @@ function App() {
       //shuffle the new array of cards
       .sort(() => Math.random() - 0.5)
       //assign an id for each shuffled card
-      .map((card) => ({ ...card, id: Math.random() }))
+      .map((card) => ({ ...card, id: Math.random() }));
 
-    //initialize shuffled cards and turns
+    //initialize shuffled cards, choices, and turn count
+    setChoiceOne(null);
+    setChoiceTwo(null);
     setCards(shuffledCards);
     setTurns(0);
   }
@@ -77,8 +79,6 @@ function App() {
     };
   }, [choiceOne, choiceTwo]);
 
-  console.log(cards);
-
 
   //reset choices and increase turn
   const resetTurn = () => {
@@ -87,6 +87,11 @@ function App() {
     setTurns(prevTurns => prevTurns + 1);
     setDisabled(false);
   };
+
+  //shuffles cards on startup
+  useEffect(() => {
+    shuffleCards()
+  }, [])
 
   return (
     <div className="App">
@@ -103,6 +108,7 @@ function App() {
             disabled={disabled} />
         ))}
       </div>
+      <p>Turns: {turns}</p>
     </div>
   );
 };
