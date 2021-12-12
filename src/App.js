@@ -104,8 +104,11 @@ function App() {
             key={card.id}
             card={card}
             handleChoice={handleChoice}
+            //keeps cards flipped that have been chosen or matched
             flipped={card === choiceOne || card === choiceTwo || card.matched}
+            //make matched cards disappear
             disappear={card.matched}
+            //disable cards not being chosen until
             disabled={disabled} />
         ))}
       </div>

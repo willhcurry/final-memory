@@ -26,3 +26,30 @@ button:hover {
   grid-template-columns: repeat(8, 1fr);
   grid-gap: 1.25em;
 }
+
+/* 
+  
+*/
+
+@media screen and (max-width: 900px) {
+  .card-grid {
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: .15em;
+    margin: 2.5em .5em;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .card-grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: .125em;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: .5em;
+    margin: 2.5em 1em;
+  }
+}

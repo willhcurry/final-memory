@@ -30,9 +30,29 @@
     transition-delay: 0s;
 }
 
-
+/* matching cards disappear */
 .disappear {
     visibility: hidden;
     opacity: 0;
     transition: visibility 0s 2s, opacity 5s linear;
+}
+
+@media screen and (max-width: 900px) {
+    .card img {
+        width: 90%;
+    }
   }
+
+@media screen and (max-width: 800px) {
+    .card img {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .card img {
+        width: 100%;
+    }
+}
+
+
