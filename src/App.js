@@ -4,7 +4,7 @@ import SingleCard from './components/SingleCard';
 import './App.css';
 
 /*
-  Images and imports need to be moved 
+  cardImages and imports need to be moved 
 */
 
 import bard from './img/bard.png';
@@ -42,7 +42,7 @@ function App() {
   //state of choices
   const [choiceOne, setChoiceOne] = useState(null);
   const [choiceTwo, setChoiceTwo] = useState(null);
-  //set state to disable unselected cards
+  //set state to disable unselected cards to prevent user spam clicking and confusion
   const [disabled, setDisabled] = useState(false);
 
   /*

@@ -13,7 +13,7 @@ other card on the table.\
 -When the user clicks the next card, its value is revealed and then compared against the
 other face up card. If they are equal, both cards disappear. If they are different, they flip
 back down.\
--The game is continued until there are no cards left.\
+-The game is continued until there are no cards left.
 
 It also keeps track of the number of turns used before completion of the game and is responsive to multiple screen resolutions.
 
