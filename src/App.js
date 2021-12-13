@@ -4,18 +4,18 @@ import SingleCard from './components/SingleCard';
 import './App.css';
 
 const cardImages = [
-  { "src": "/img/Bard.png", matched: false },
-  { "src": "/img/BlackMage.png", matched: false },
-  { "src": "/img/DarkKnight.png", matched: false },
-  { "src": "/img/Dragoon.png", matched: false },
-  { "src": "/img/GunBreaker.png", matched: false },
-  { "src": "/img/Monk.png", matched: false },
-  { "src": "/img/Ninja.png", matched: false },
-  { "src": "/img/Paladin.png", matched: false },
-  { "src": "/img/Samurai.png", matched: false },
-  { "src": "/img/Summoner.png", matched: false },
-  { "src": "/img/Warrior.png", matched: false },
-  { "src": "/img/WhiteMage.png", matched: false }
+  { "src": "/img/bard.png", matched: false },
+  { "src": "/img/blackmage.png", matched: false },
+  { "src": "/img/darkknight.png", matched: false },
+  { "src": "/img/dragoon.png", matched: false },
+  { "src": "/img/gunbreaker.png", matched: false },
+  { "src": "/img/monk.png", matched: false },
+  { "src": "/img/ninja.png", matched: false },
+  { "src": "/img/paladin.png", matched: false },
+  { "src": "/img/samurai.png", matched: false },
+  { "src": "/img/summoner.png", matched: false },
+  { "src": "/img/warrior.png", matched: false },
+  { "src": "/img/whiteMage.png", matched: false }
 ];
 
 function App() {
