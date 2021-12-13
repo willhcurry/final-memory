@@ -3,19 +3,36 @@ import { useState, useEffect } from 'react';
 import SingleCard from './components/SingleCard';
 import './App.css';
 
+/*
+  Images and imports need to be moved 
+*/
+
+import bard from './img/bard.png';
+import blackmage from './img/blackmage.png';
+import darkknight from './img/darkknight.png';
+import dragoon from './img/dragoon.png';
+import gunbreaker from './img/gunbreaker.png';
+import monk from './img/monk.png';
+import ninja from './img/ninja.png';
+import paladin from './img/paladin.png';
+import samurai from './img/samurai.png';
+import summoner from './img/summoner.png';
+import warrior from './img/warrior.png';
+import whitemage from './img/whitemage.png';
+
 const cardImages = [
-  { "src": "/img/bard.png", matched: false },
-  { "src": "/img/blackmage.png", matched: false },
-  { "src": "/img/darkknight.png", matched: false },
-  { "src": "/img/dragoon.png", matched: false },
-  { "src": "/img/gunbreaker.png", matched: false },
-  { "src": "/img/monk.png", matched: false },
-  { "src": "/img/ninja.png", matched: false },
-  { "src": "/img/paladin.png", matched: false },
-  { "src": "/img/samurai.png", matched: false },
-  { "src": "/img/summoner.png", matched: false },
-  { "src": "/img/warrior.png", matched: false },
-  { "src": "/img/whitemage.png", matched: false }
+  { "src": bard, matched: false },
+  { "src": blackmage, matched: false },
+  { "src": darkknight, matched: false },
+  { "src": dragoon, matched: false },
+  { "src": gunbreaker, matched: false },
+  { "src": monk, matched: false },
+  { "src": ninja, matched: false },
+  { "src": paladin, matched: false },
+  { "src": samurai, matched: false },
+  { "src": summoner, matched: false },
+  { "src": warrior, matched: false },
+  { "src": whitemage, matched: false }
 ];
 
 function App() {
