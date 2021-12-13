@@ -1,20 +1,33 @@
 {
   "files": {
     "main.css": "/final-memory/static/css/main.12c31b29.chunk.css",
-    "main.js": "/final-memory/static/js/main.345cc3c1.chunk.js",
-    "main.js.map": "/final-memory/static/js/main.345cc3c1.chunk.js.map",
+    "main.js": "/final-memory/static/js/main.aee1e783.chunk.js",
+    "main.js.map": "/final-memory/static/js/main.aee1e783.chunk.js.map",
     "runtime-main.js": "/final-memory/static/js/runtime-main.824562c5.js",
     "runtime-main.js.map": "/final-memory/static/js/runtime-main.824562c5.js.map",
     "static/js/2.2b9b1efd.chunk.js": "/final-memory/static/js/2.2b9b1efd.chunk.js",
     "static/js/2.2b9b1efd.chunk.js.map": "/final-memory/static/js/2.2b9b1efd.chunk.js.map",
     "index.html": "/final-memory/index.html",
     "static/css/main.12c31b29.chunk.css.map": "/final-memory/static/css/main.12c31b29.chunk.css.map",
-    "static/js/2.2b9b1efd.chunk.js.LICENSE.txt": "/final-memory/static/js/2.2b9b1efd.chunk.js.LICENSE.txt"
+    "static/js/2.2b9b1efd.chunk.js.LICENSE.txt": "/final-memory/static/js/2.2b9b1efd.chunk.js.LICENSE.txt",
+    "static/media/back.c76051c3.png": "/final-memory/static/media/back.c76051c3.png",
+    "static/media/bard.39e17c5e.png": "/final-memory/static/media/bard.39e17c5e.png",
+    "static/media/blackmage.060ec433.png": "/final-memory/static/media/blackmage.060ec433.png",
+    "static/media/darkknight.107d2a67.png": "/final-memory/static/media/darkknight.107d2a67.png",
+    "static/media/dragoon.984cdeb0.png": "/final-memory/static/media/dragoon.984cdeb0.png",
+    "static/media/gunbreaker.744b7390.png": "/final-memory/static/media/gunbreaker.744b7390.png",
+    "static/media/monk.1ad8d731.png": "/final-memory/static/media/monk.1ad8d731.png",
+    "static/media/ninja.88d1a4ab.png": "/final-memory/static/media/ninja.88d1a4ab.png",
+    "static/media/paladin.eac7c25f.png": "/final-memory/static/media/paladin.eac7c25f.png",
+    "static/media/samurai.400a0add.png": "/final-memory/static/media/samurai.400a0add.png",
+    "static/media/summoner.dc2db923.png": "/final-memory/static/media/summoner.dc2db923.png",
+    "static/media/warrior.bcfcbc72.png": "/final-memory/static/media/warrior.bcfcbc72.png",
+    "static/media/whitemage.7b201162.png": "/final-memory/static/media/whitemage.7b201162.png"
   },
   "entrypoints": [
     "static/js/runtime-main.824562c5.js",
     "static/js/2.2b9b1efd.chunk.js",
     "static/css/main.12c31b29.chunk.css",
-    "static/js/main.345cc3c1.chunk.js"
+    "static/js/main.aee1e783.chunk.js"
   ]
 }
