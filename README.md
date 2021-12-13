@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+## Final Memory
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple memory game inspired by the world of Final Fantasy from Square Enix.
 
-## Available Scripts
+[Final Memory - GitHub Pages](https://willhcurry.github.io/final-memory/)
 
-In the project directory, you can run:
+This game currently completes the following game rules checklist:
 
-### `npm start`
+-At the start of the game, the user is presented with a grid of 24 facedown cards.
+-Each card looks identical face down, but has a face-up value that is matched by only one
+other card on the table.
+-When the user clicks a card, it flips over revealing its value.
+-When the user clicks the next card, its value is revealed and then compared against the
+other face up card. If they are equal, both cards disappear. If they are different, they flip
+back down.
+-The game is continued until there are no cards left.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+It also keeps track of the number of turns used before completion of the game and is responsive to multiple screen resolutions.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
+I started coding this project on December 10th 2021. This is the first deployed build and is currently an incomplete project. The following features improvements are being added:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+-Use typechecking with TypeScript.
+-A modal to show score and number of turns.
+-Final Fantasy music during gameplay and after game completion that will be toggleable with volume control.
+-Sounds effects for clicks and matched cards.
+-Sign up and sign in pages.
+-User data with scores to be saved into a database.
 
-### `npm run build`
+Future developement improvements:
+-Improved code and component structuring.
+-Performance.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Developed using
+[React](https://reactjs.org/)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Bootstrapped with
+[Create React App](https://create-react-app.dev/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Deployed with
+[GitHub Pages](https://pages.github.com/)
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+# License
+This project is licensed under the MIT License.
+All characters, music, sound effects, pictures, classes/jobs, and their likeness belong to Square Enix Global.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
