@@ -4,7 +4,7 @@ A simple memory game inspired by the world of Final Fantasy from Square Enix.
 
 [Final Memory - GitHub Pages](https://willhcurry.github.io/final-memory/)
 
-This game currently completes the following game rules checklist:\
+This game currently completes the following game rules checklist:
 
 -At the start of the game, the user is presented with a grid of 24 facedown cards.\
 -Each card looks identical face down, but has a face-up value that is matched by only one
@@ -25,10 +25,10 @@ I started coding this project on December 10th 2021. This is the first deployed 
 -Final Fantasy music during gameplay and after game completion that will be toggleable with volume control.\
 -Sounds effects for clicks and matched cards.\
 -Sign up and sign in pages.\
--User data with scores to be saved into a database.\
+-User data with scores to be saved into a database.
 
-Future developement improvements:
--Improved code and component structuring.
+Future developement improvements:\
+-Improved code and component structuring.\
 -Performance.
 
 ### Developed using
@@ -40,7 +40,14 @@ Future developement improvements:
 ### Deployed with
 [GitHub Pages](https://pages.github.com/)
 
+### Testing by way of
+[Jest](https://jestjs.io/) and [Enzyme](https://airbnb.io/projects/enzyme/)
 
+Current test coverage:/
+Test Suites: 2 passed, 2 total
+Tests:       2 passed, 2 total
+Snapshots:   2 passed, 2 total
+Time:        1.516 s, estimated 2 s
 
 
 ### License
