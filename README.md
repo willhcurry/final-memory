@@ -43,13 +43,6 @@ Future developement improvements:\
 ### Testing by way of
 [Jest](https://jestjs.io/) and [Enzyme](https://airbnb.io/projects/enzyme/)
 
-Current test coverage:/
-Test Suites: 2 passed, 2 total
-Tests:       2 passed, 2 total
-Snapshots:   2 passed, 2 total
-Time:        1.516 s, estimated 2 s
-
-
 ### License
 This project is licensed under the MIT License.\
 All characters, music, sound effects, pictures, classes/jobs, and their likeness belong to Square Enix Global.
