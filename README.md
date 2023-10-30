@@ -17,20 +17,6 @@ back down.\
 
 It also keeps track of the number of turns used before completion of the game and is responsive to multiple screen resolutions.
 
-
-I started coding this project on December 10th 2021. This is the first deployed build and is currently an incomplete project. The following features improvements are being added:
-
--Use typechecking with TypeScript.\
--A modal to show score and number of turns.\
--Final Fantasy music during gameplay and after game completion that will be toggleable with volume control.\
--Sounds effects for clicks and matched cards.\
--Sign up and sign in pages.\
--User data with scores to be saved into a database.
-
-Future developement improvements:\
--Improved code and component structuring.\
--Performance.
-
 ### Developed using
 [React](https://reactjs.org/)
 
